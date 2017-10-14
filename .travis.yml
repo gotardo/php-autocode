@@ -1,0 +1,23 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - nightly
+
+before_script:
+  ## Composer
+  - curl -s http://getcomposer.org/installer | php
+  - composer install --prefer-source --no-interaction
+
+script:
+    - phpunit
+
+notifications:
+    email:
+        - ci@gotardo.es
+
+branches:
+  only:
+  - gh-pages
+  - /.*/

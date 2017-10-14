@@ -1,0 +1,29 @@
+{
+    "name": "gotardo/php-autocode",
+    "description": "A quick code generator",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gotardo Gonzalez",
+            "email": "contact@gotardo.es",
+            "homepage": "https://github.com/gotardo"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "symfony/console": "^3.3@dev",
+        "symfony/yaml": "^3.3@dev",
+        "symfony/filesystem": "3.4.x-dev",
+        "phpmetrics/phpmetrics": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Autocode\\": ["src/Autocode", "test/Autocode"]
+        }
+    }
+}
