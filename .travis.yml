@@ -12,7 +12,10 @@ before_script:
   - composer install --prefer-source --no-interaction
 
 script:
-    - phpunit -c phpunit.xml.dist
+  - phpunit -c phpunit.xml.dist
+
+after_script:
+  - ./build/codeclimate.sh
 
 notifications:
     email:
