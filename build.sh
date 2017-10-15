@@ -1,4 +1,3 @@
 #!/bin/bash
-
-php ./vendor/bin/phpmetrics --report-html=reporting/phpmetrics .
-phpunit -c phpunit.xml.dist
+./vendor/bin/phpmetrics --report-html=reporting/phpmetrics .
+./vendor/bin/phpunit -c phpunit.xml.dist
