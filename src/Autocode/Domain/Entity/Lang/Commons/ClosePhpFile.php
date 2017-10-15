@@ -2,7 +2,9 @@
 
 namespace Autocode\Domain\Entity\Lang\Commons;
 
-class ClosePhpFile
+use Autocode\Domain\Service\Coder\ICodeFragment;
+
+class ClosePhpFile implements ICodeFragment
 {
     public function __toString(): string
     {

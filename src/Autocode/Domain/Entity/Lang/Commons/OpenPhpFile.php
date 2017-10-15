@@ -2,7 +2,7 @@
 
 namespace Autocode\Domain\Entity\Lang\Commons;
 
-use Autocode\Domain\Entity\Lang\ICodeFragment;
+use Autocode\Domain\Service\Coder\ICodeFragment;
 
 class OpenPhpFile implements ICodeFragment
 {
